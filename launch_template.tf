@@ -1,6 +1,7 @@
 resource "aws_launch_template" "main" {
   name_prefix   = "my-launch-template"
-  image_id      = "ami-0da9e85793f872825" # Your AMI ID
+  # this is Canonical 220.04 Ubuntu AMI ID
+  image_id      = "ami-0da9e85793f872825"
   instance_type = "t2.micro"
   key_name      = "fullstack-app-kp"
 
